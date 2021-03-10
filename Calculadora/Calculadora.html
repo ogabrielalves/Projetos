@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="calculator_14445.png" type="image/x-icon">
+    <title>Calculadora</title>
+</head>
+
+<body>
+    <center>
+        <div class="Caixa">
+            <h1>Gabriel's Machine</h1>
+            <input placeholder="Digite o número decimal" id="dec" type="text">
+            <h3>Converter para:</h3>
+            <button onclick="octal()">OCTAL</button>
+            <button onclick="hexa()">HEXADECIMAL</button>
+            <button onclick="binario()">BINÁRIO</button>
+            <div id="div_msg"></div>
+        </div>
+    </center>
+
+</body>
+
+</html>
+
+<script>
+    function octal() {
+        var decimal = Number(dec.value);
+        var octal = decimal.toString(8)
+        div_msg.innerHTML = `O número <b>${decimal} em octal</b> é: <b>${octal}</b> <br><br>`;
+    }
+    function hexa() {
+        var decimal = Number(dec.value);
+        var hexadecimal = decimal.toString(16);
+        div_msg.innerHTML = `O número <b>${decimal} em hexadecimal</b> é: <b>${hexadecimal.toUpperCase()}</b> <br><br>`;
+    }
+    function binario() {
+        var decimal = Number(dec.value);
+        var binario = decimal.toString(2)
+        div_msg.innerHTML = `O número <b>${decimal} em binário</b> é: <b>${binario}</b> <br><br>`;
+    }
+</script>
