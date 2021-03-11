@@ -1,0 +1,71 @@
+body {
+    background-color: #1d1d1d;
+  }
+  
+  .Caixa img {
+    margin-left: 65px;
+  }
+  
+  .Caixa {
+    display: flex;
+    flex-direction: column;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    }
+  
+  .Caixa input, button {
+    height: 35px;
+    padding: 0 10px;
+    width: 300px;
+  }
+  
+  .Caixa input {
+    background-color: #2e2e2e;
+    margin: 10px;
+    border: none;
+    outline: none;
+  }
+  
+  .Facebook {
+    background-color: #385898;
+    color: white;
+    margin-top: 50px;
+    border-radius: 24px;
+    width: 335px;
+    border: none;
+    outline: none;
+  }
+  
+  .Login {
+    background-color: #1DB954;
+    color: white;
+    border: none;
+    border-radius: 24px;
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 45px;
+    outline: none;
+  }
+  
+  .remember a {
+    font-family: "Roboto", sans-serif;
+    color: #aaa;
+    margin-top: 15px;
+    margin-left: 13px;
+  }
+  
+  button:hover {
+    background-color: white;
+    color: black;
+  }
+  
+  .remember {
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    margin-top: 100px;
+  }
+  
